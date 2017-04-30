@@ -1,0 +1,2 @@
+screen /dev/tty.usbserial 9600
+
