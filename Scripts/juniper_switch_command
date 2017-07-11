@@ -1,0 +1,2 @@
+
+for sw in 26 6 7 8 9 10 11 12 13; do echo "--------- $sw ----------" ; ssh -l daniel 10.65.56.$sw "show ethernet-switching table | match security | match ge-"; echo "-----------" ;done
