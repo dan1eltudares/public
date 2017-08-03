@@ -1,0 +1,1 @@
+for sw in 15 14 13 12 11 10 9 8 6 26 5; do ./juniper_shutdown.ex daniel 10.65.56.$sw;done
