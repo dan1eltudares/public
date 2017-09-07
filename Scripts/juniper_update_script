@@ -1,0 +1,1 @@
+for sw in 13 12 11 10 9 8 7; do ./juniper_update_time.ex daniel 10.65.56.$sw;done
