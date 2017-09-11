@@ -1,0 +1,21 @@
+#!/usr/local/bin/expect -f
+
+# usage is: ./scriptname.sh <username> <switch IP> 
+
+spawn ssh -l [lindex $argv 0] [lindex $argv 1]
+expect ">"
+
+send "edit\r"
+expect "#"
+
+send "set system services netconf ssh\r"
+expect "#"
+
+send "commit\r"
+expect "commit complete"
+
+send "exit\r"
+expect ">"
+
+send "exit\r"
+expect "$"
