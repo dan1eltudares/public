@@ -1,7 +1,5 @@
 ---
-- hosts: localhost
-  connection: local
-
+- hosts: all
   tasks:
     - name: Ensure Docker image is built from the test Dockerfile.
       docker_image:
