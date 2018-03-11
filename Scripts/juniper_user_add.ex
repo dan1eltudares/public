@@ -8,13 +8,13 @@ expect ">"
 send "edit\r"
 expect "#"
 
-send "set system login user jason uid 4008\r"
+send "set system login user mark uid 4007\r"
 expect "#"
 
-send "set system login user jason class admin\r"
+send "set system login user mark class admin\r"
 expect "#"
 
-send "set system login user jason authentication ssh-rsa \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBDzG50FsIIYm4rnZLHFcVzLWQdL4VmnzSIUgJDc2EM7daYrKj5UQg/I8Gci0hmsgBGNC7QfjWgVzv7dSNrCRZ+5/LTv1kXXGjFu2ElCWbc+pzFPooRBdXbAIVITB3wQmmadJ+J9kW9a7VAKmQxS6bu2rQOPHCTUYE7MKXxfIw1UQzc6+kefQpt648Z+un7SAHtp96j8aDu7n8zvIjHMZlAgE1ZnOnGdvR1tASaYth993hqyJsvTvVxD8fg2LYJO4emn8aTQ9P5wwpcWLe7Dy3mBKK8yClVlLaf+v2NISwIoYoe9AgI6T+zr5KGdJkv8kJHb2A9X0E1Pf9/hpmxiTCXOeh2ghJlPnMxhULVrTmlyHu4ygNpGqPi7MtJiUAc65+ETYosVDviYQhXnt1icbF3kUXVvFXI8AwEkEFXA/A8L1FxRUq1QpmJVrk9cbHbIckFWe364VjwERxyJ9XwWLqf3TCMVA8/0kOKssGHq4JwmI4ov89sOrcScwT3/bDyzIO3MubYTMayculquspnwsrXnlOalYJjZSY6reZWbIEzlYNJCVbJqyYkAQFjdGmmTqfoCm6UCFY33JKb7aGqE3sLfRomXBRVSBG3XdHlg0OUcfsw5to8mjFXM+8GlsAt7agSMPEuFVnmnPJxiIFPU4pgCvejK86kWFgIewwt9RpLw== jason.monk@shopify.com\"\r"
+send "set system login user mark authentication ssh-rsa \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDWSRj4sdbk4BTU2O5oW+hKUB5dj1BUpox9BfNCC4nEG+J+IcjEt6WIRAau3+FF78lJWfeQRtO17r8JeNDnwSQ/eZOiWkgCTPAnOAfSOXucQU81Klw61Ue0zS4yrH2PLBeaqgXZyCnSWrZwEqneOU7th59wm8+ieQ14SwtRTZ8dnsA21R9L1qgFf49QkQq9HgQqtLh6uEc8KPkAY+KDT8gzlku/eTUfsV2m9jB4HWLgBqChqpN537cIKzvUUMPqC3beXnQCxBk0mc/xr1w9+5LXJPAXy73khToDIIx01pQPUa2JC4iZpRu/++S47MUnW4QyQIMpgOsD4D/cLfZNoRA77WG0Xl4vVuTSPqKCo9nI1yWanYAPvmIoQjNFlmoOMc2XR9s+A7518AY9GKVJrbCbytkWeRgeHCaOHlH689tzz+kJImGkpAXUO8AnYnHje1YCL65CC8Yo9j2pJqVvkALy5z32rYDVyoC8geksliYWveIYonXCHwdtVpEMx/xKcYxbGf6y2pqs+hDnhQhyl319x7wBxJtzoNZjWQQCTES5InTrPqa4nEsJmlUYi1cWwcIkrNZl8H+OuHC0GyctblCWmrJPJNrWNMEGpPIzDff8rHZ1EEVi+PL53nzk78oPMYEeF0oO0lRvPY3B4CiM4lmmCpwyrgEOl34dpeilTegywQ== mark.gagnon@shopify.com\"\r"
 expect "#"
 
 send "commit\r"

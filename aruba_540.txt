@@ -1,0 +1,7 @@
+http://h17007.www1.hpe.com/us/en/networking/library/index.aspx?cat=switches&subcat=5400R#.WgReZxNSxYg
+https://support.hpe.com/hpsc/doc/public/display?docId=a00028963en_us
+
+
+/os/[primary][secondary]
+/cfg/[running-config][startup-config]
+/log/event log
