@@ -1,0 +1,18 @@
+---
+- name: Get facts
+  hosts: all
+  connection: local
+  gather_facts: no
+  roles:
+    - Juniper.junos
+  vars_prompt:
+    - name: ADMUSER
+      prompt: Username
+      private: no
+  tasks:
+    - name: Run show commands
+      junos_cli:
+        host: "{{ inventory_hostname }}"
+        user: "{{ ADMUSER }}"
+        cli: "show version"
+        dest: "cli.txt"

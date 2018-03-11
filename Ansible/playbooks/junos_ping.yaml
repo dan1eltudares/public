@@ -1,0 +1,20 @@
+---
+- name: Get facts
+  hosts: all
+  connection: local
+  gather_facts: no
+  roles:
+    - Juniper.junos
+  vars_prompt:
+    - name: ADMUSER
+      prompt: Username
+      private: no
+  tasks:
+    - name: Run show commands
+      junos_ping:
+        host: "{{ inventory_hostname }}"
+        user: "{{ ADMUSER }}"
+        register: ping
+    - name: Print facts
+      debug:
+        var: ping
